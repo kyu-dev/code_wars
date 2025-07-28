@@ -1,15 +1,14 @@
 function addBinary(a, b) {
   let num = a + b;
-  let rem;
-  let result = 0;
-  let i = 1;
+  if (num === 0) return "0"; // ça fait le tri direct
+
+  let result = "";
 
   while (num > 0) {
-    rem = num % 2;
-    result += rem * i;
-    i *= 10;
+    let bit = num % 2;
+    result = bit + result;
     num = Math.floor(num / 2);
   }
-  result = result.toString();
+
   return result;
 }
