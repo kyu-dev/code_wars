@@ -10,7 +10,7 @@ function solution(text, markers) {
         minIndex = idx;
       }
     }
-    result.push(line.slice(0, minIndex).trim());
+    result.push(line.slice(0, minIndex).trimEnd());
   }
   return result.join("\n");
 }
