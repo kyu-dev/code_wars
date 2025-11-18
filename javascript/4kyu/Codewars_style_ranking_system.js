@@ -47,6 +47,6 @@ class User {
 }
 
 const user1 = new User();
-user1.rank;
-user1.incProgress(4);
+console.log(user1.rank);
+user1.incProgress(-4);
 console.log(user1.rank);
